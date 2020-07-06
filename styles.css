@@ -1,0 +1,50 @@
+* {
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color-one: #99cc43;
+  --bg-color-two: #f7f7f7;
+}
+.main-bg {
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  height: calc(100vh - 130px);
+  background-size: cover;
+  background-position: right;
+}
+.bg-color-one {
+  background-color: var(--bg-color-one);
+}
+.bg-color-two {
+  background-color: var(--bg-color-two);
+}
+.icon-container {
+  color: #fff;
+  background-color: var(--bg-color-one);
+  padding: 25px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card .img-thumbnail {
+  height: 250px;
+  object-fit: cover;
+}
+.footer p::first-letter {
+  padding-left: 15px;
+}
+.footer .list-group-item {
+  border-color: #fff;
+}
+@media (max-width: 731px) {
+  .main-bg {
+    height: auto;
+    padding: 10px 0;
+  }
+}
